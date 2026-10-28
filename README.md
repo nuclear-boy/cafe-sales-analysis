@@ -7,6 +7,8 @@
 ![NumPy](https://img.shields.io/badge/NumPy-1.26%2B-013243?logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 
+**Notebooks:** [Bahasa Indonesia](notebooks/cafe_sales_cleaning_id.ipynb) · [English](notebooks/cafe_sales_cleaning_en.ipynb)
+
 An end-to-end data cleaning project that turns a deliberately dirty cafe sales dataset into an analysis-ready table. The project was **completed over 3 days using Python** and documents every cleaning decision, from dirty-token detection to validation.
 
 ---
@@ -26,7 +28,8 @@ Proyek ini mendokumentasikan proses pembersihan dataset penjualan kafe yang seng
 | Bahasa pemrograman | **Python 3** |
 | Library utama | pandas, NumPy |
 | Jumlah data | 10.000 baris x 8 kolom |
-| Notebook | `notebooks/cafe_sales_cleaning_bilingual.ipynb` |
+| Notebook | [`cafe_sales_cleaning_id.ipynb`](notebooks/cafe_sales_cleaning_id.ipynb) |
+| Versi bahasa Inggris | [`cafe_sales_cleaning_en.ipynb`](notebooks/cafe_sales_cleaning_en.ipynb) |
 | Sumber dataset | [Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training) oleh **Ahmed Mohamed** (Kaggle) |
 
 ### Struktur repositori
@@ -39,7 +42,8 @@ cafe-sales-analysis/
 │   └── processed/
 │       └── clean_cafe_sales.csv        # hasil cleaning dari notebook
 ├── notebooks/
-│   └── cafe_sales_cleaning_bilingual.ipynb
+│   ├── cafe_sales_cleaning_id.ipynb    # versi Bahasa Indonesia
+│   └── cafe_sales_cleaning_en.ipynb    # English version
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -91,10 +95,10 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
-jupyter notebook notebooks/cafe_sales_cleaning_bilingual.ipynb
+jupyter notebook notebooks/cafe_sales_cleaning_id.ipynb
 ```
 
-Jalankan notebook dari folder `notebooks/` atau dari root repositori. Path data sudah menyesuaikan keduanya.
+Untuk versi bahasa Inggris, buka `notebooks/cafe_sales_cleaning_en.ipynb`. Kedua notebook memakai kode dan output konsol berbahasa Inggris agar konsisten, sedangkan penjelasan markdown mengikuti bahasa masing-masing. Notebook dapat dijalankan dari folder `notebooks/` atau dari root repositori; path data sudah menyesuaikan keduanya.
 
 ### Insight utama
 
@@ -126,7 +130,8 @@ This project documents the cleaning of a cafe sales dataset that was intentional
 | Programming language | **Python 3** |
 | Main libraries | pandas, NumPy |
 | Dataset size | 10,000 rows x 8 columns |
-| Notebook | `notebooks/cafe_sales_cleaning_bilingual.ipynb` |
+| Notebook | [`cafe_sales_cleaning_en.ipynb`](notebooks/cafe_sales_cleaning_en.ipynb) |
+| Indonesian version | [`cafe_sales_cleaning_id.ipynb`](notebooks/cafe_sales_cleaning_id.ipynb) |
 | Dataset source | [Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training) by **Ahmed Mohamed** (Kaggle) |
 
 ### Repository structure
@@ -139,7 +144,8 @@ cafe-sales-analysis/
 │   └── processed/
 │       └── clean_cafe_sales.csv        # output produced by the notebook
 ├── notebooks/
-│   └── cafe_sales_cleaning_bilingual.ipynb
+│   ├── cafe_sales_cleaning_id.ipynb    # Indonesian version
+│   └── cafe_sales_cleaning_en.ipynb    # English version
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -191,10 +197,10 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
-jupyter notebook notebooks/cafe_sales_cleaning_bilingual.ipynb
+jupyter notebook notebooks/cafe_sales_cleaning_en.ipynb
 ```
 
-Run the notebook from either the `notebooks/` folder or the repository root. The data paths support both locations.
+For the Indonesian version, open `notebooks/cafe_sales_cleaning_id.ipynb`. Both notebooks share English code and console outputs for consistency, while the markdown explanations follow each notebook's language. Notebooks can be run from either the `notebooks/` folder or the repository root; the data paths support both locations.
 
 ### Key insights
 
