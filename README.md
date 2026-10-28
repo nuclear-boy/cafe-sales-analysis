@@ -30,6 +30,7 @@ Proyek ini mendokumentasikan proses pembersihan dataset penjualan kafe yang seng
 | Jumlah data | 10.000 baris x 8 kolom |
 | Notebook | [`cafe_sales_cleaning_id.ipynb`](notebooks/cafe_sales_cleaning_id.ipynb) |
 | Versi bahasa Inggris | [`cafe_sales_cleaning_en.ipynb`](notebooks/cafe_sales_cleaning_en.ipynb) |
+| Dashboard | [`dashboard/app.py`](dashboard/app.py) (baseline) |
 | Sumber dataset | [Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training) oleh **Ahmed Mohamed** (Kaggle) |
 
 ### Struktur repositori
@@ -44,6 +45,11 @@ cafe-sales-analysis/
 ├── notebooks/
 │   ├── cafe_sales_cleaning_id.ipynb    # versi Bahasa Indonesia
 │   └── cafe_sales_cleaning_en.ipynb    # English version
+├── dashboard/
+│   ├── app.py                          # dashboard Streamlit (baseline)
+│   ├── utils.py                        # loader data dan filter
+│   ├── requirements.txt
+│   └── README.md
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -100,6 +106,17 @@ jupyter notebook notebooks/cafe_sales_cleaning_id.ipynb
 
 Untuk versi bahasa Inggris, buka `notebooks/cafe_sales_cleaning_en.ipynb`. Kedua notebook memakai kode dan output konsol berbahasa Inggris agar konsisten, sedangkan penjelasan markdown mengikuti bahasa masing-masing. Notebook dapat dijalankan dari folder `notebooks/` atau dari root repositori; path data sudah menyesuaikan keduanya.
 
+### Dashboard
+
+Scaffold dashboard Streamlit sudah tersedia di `dashboard/` (status: baseline). Dashboard memuat data hasil cleaning dan menyediakan filter produk, metode pembayaran, lokasi, serta rentang tanggal opsional.
+
+```bash
+pip install -r dashboard/requirements.txt
+streamlit run dashboard/app.py
+```
+
+Detail fitur dan roadmap ada di [`dashboard/README.md`](dashboard/README.md).
+
 ### Insight utama
 
 1. Persentase nilai hilang pada `payment_method` dan `location` sangat tinggi (di atas 30%), sehingga imputasi perlu diberi catatan saat data dipakai untuk keputusan bisnis.
@@ -132,6 +149,7 @@ This project documents the cleaning of a cafe sales dataset that was intentional
 | Dataset size | 10,000 rows x 8 columns |
 | Notebook | [`cafe_sales_cleaning_en.ipynb`](notebooks/cafe_sales_cleaning_en.ipynb) |
 | Indonesian version | [`cafe_sales_cleaning_id.ipynb`](notebooks/cafe_sales_cleaning_id.ipynb) |
+| Dashboard | [`dashboard/app.py`](dashboard/app.py) (baseline) |
 | Dataset source | [Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training) by **Ahmed Mohamed** (Kaggle) |
 
 ### Repository structure
@@ -146,6 +164,11 @@ cafe-sales-analysis/
 ├── notebooks/
 │   ├── cafe_sales_cleaning_id.ipynb    # Indonesian version
 │   └── cafe_sales_cleaning_en.ipynb    # English version
+├── dashboard/
+│   ├── app.py                          # Streamlit dashboard (baseline)
+│   ├── utils.py                        # data loader and filters
+│   ├── requirements.txt
+│   └── README.md
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -201,6 +224,17 @@ jupyter notebook notebooks/cafe_sales_cleaning_en.ipynb
 ```
 
 For the Indonesian version, open `notebooks/cafe_sales_cleaning_id.ipynb`. Both notebooks share English code and console outputs for consistency, while the markdown explanations follow each notebook's language. Notebooks can be run from either the `notebooks/` folder or the repository root; the data paths support both locations.
+
+### Dashboard
+
+A Streamlit dashboard scaffold is available in `dashboard/` (status: baseline). It loads the cleaned dataset and provides filters for items, payment methods, locations, and an optional date range.
+
+```bash
+pip install -r dashboard/requirements.txt
+streamlit run dashboard/app.py
+```
+
+Feature details and the roadmap are in [`dashboard/README.md`](dashboard/README.md).
 
 ### Key insights
 
