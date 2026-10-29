@@ -142,7 +142,7 @@ This project documents the cleaning of a cafe sales dataset that was intentional
 
 | Item | Detail |
 |---|---|
-| Author | Phy Fiq |
+| Author | Fiqkri Putra Riswanda |
 | Project duration | **3 days** |
 | Programming language | **Python 3** |
 | Main libraries | pandas, NumPy |
