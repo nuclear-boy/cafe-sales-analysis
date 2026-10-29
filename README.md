@@ -23,7 +23,7 @@ Proyek ini mendokumentasikan proses pembersihan dataset penjualan kafe yang seng
 
 | Item | Detail |
 |---|---|
-| Penulis | Phy Fiq |
+| Penulis | Fiqkri Putra Riswanda |
 | Durasi pengerjaan | **3 hari** |
 | Bahasa pemrograman | **Python 3** |
 | Library utama | pandas, NumPy |
